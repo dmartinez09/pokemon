@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pokemon:</strong>
+  <%= Pokemon.find(@caught.pokemon_id).name %>
+</p>
+<p>
+  <strong>Level:</strong>
+  <%= @caught.level %>
+</p>
+
+<%= link_to 'Edit', edit_user_caught_path(params[:user_id], @caught) %> |
+<%= link_to 'Back', user_caughts_path(params[:user_id])%>

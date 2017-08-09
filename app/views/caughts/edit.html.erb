@@ -1,0 +1,6 @@
+<h1>Editing Caught</h1>
+
+<%= render 'form', caught: @caught %>
+
+<%= link_to 'Show', user_caught_path(params[:user_id], @caught.id) %> 
+<%= link_to 'Back', user_caughts_path(params[:user_id]) %>
